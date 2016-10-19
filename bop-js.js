@@ -51,10 +51,18 @@ function materialLightAnime(){
   var text = document.getElementById("text-anime");
   pop.style.display = "block";
   shade.style.display = "block";
+  
   setTimeout(function() {
+      if(screen.width <600){
+      pop.style.width = "90%";
+      pop.style.height = "60%";
+      pop.style.borderRadius = "2px";
+    }
+    else{
     pop.style.width = "40%";
     pop.style.height = "auto";
     pop.style.borderRadius = "2px";
+  }
   }, 800);
   setTimeout(function() {
     head.style.marginTop = "0px";
@@ -72,9 +80,17 @@ function materialDarkAnime(){
   pop.style.display = "block";
   shade.style.display = "block";
   setTimeout(function() {
+    
+      if(screen.width <600){
+      pop.style.width = "90%";
+      pop.style.height = "60%";
+      pop.style.borderRadius = "2px";
+    }
+    else{
     pop.style.width = "40%";
     pop.style.height = "auto";
     pop.style.borderRadius = "2px";
+  }
   }, 800);
   setTimeout(function() {
     head.style.marginTop = "0px";
